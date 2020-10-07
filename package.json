@@ -4,13 +4,14 @@
   "description": "This is our first telegram bot",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vaibhavgoyal-droid/Telegram-bot.git"
   },
-  "author": "Vaibhav,Yash,Yatharth,Vikas",
+  "author": "Vaibhav bete,Yash bete,Yatharth,Vikash bete",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/vaibhavgoyal-droid/Telegram-bot/issues"
