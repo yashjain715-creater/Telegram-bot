@@ -19,7 +19,12 @@ bo.catch((err,ctx) => {
 bot.start((ctx) => {
     throw new Error('Example error')
 })
-
+bot.use(async (ctx,next) => {
+    const start =new Date()
+    await next()
+    const ms = new Date() - start
+    console.log('Response time: %sms', ms)
+})
 bot.on('sticker', (ctx) => ctx.reply('👍'))
 bot.hears('hi', (ctx) => ctx.reply('Hey there'))
 
